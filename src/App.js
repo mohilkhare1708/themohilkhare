@@ -4,8 +4,8 @@ import './assets/css/default.css';
 import './assets/css/layout.css';
 import './assets/css/magnific-popup.css';
 import './assets/css/media-queries.css';
-import './assets/js/jquery-3.6.0.min.js'; 
-import './assets/js/jquery-migrate-1.2.1.min.js';
+import jQuery  from 'jquery';
+import './assets/js/jquery-migrate-1.2.1.min';
 
 // import './assets/js/jquery.flexslider';
 // import './assets/js/modernizr.js';
