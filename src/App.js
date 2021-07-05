@@ -4,10 +4,10 @@ import './assets/css/default.css';
 import './assets/css/layout.css';
 import './assets/css/magnific-popup.css';
 import './assets/css/media-queries.css';
+import $ from 'jquery';
 // import './assets/js/jquery-migrate-1.2.1.min';
-
 // import './assets/js/jquery.flexslider';
-import './assets/js/modernizr.js';
+// import './assets/js/modernizr.js';
 // import './assets/js/waypoints';
 // import './assets/js/jquery.fittext';
 // import './assets/js/magnific-popotup';
@@ -747,7 +747,7 @@ function App() {
 
         </div>
 
-        </footer>
+      </footer>
     </div>
   );
 }
