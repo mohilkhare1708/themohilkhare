@@ -4,11 +4,10 @@ import './assets/css/default.css';
 import './assets/css/layout.css';
 import './assets/css/magnific-popup.css';
 import './assets/css/media-queries.css';
-import jQuery  from 'jquery';
-import './assets/js/jquery-migrate-1.2.1.min';
+// import './assets/js/jquery-migrate-1.2.1.min';
 
 // import './assets/js/jquery.flexslider';
-// import './assets/js/modernizr.js';
+import './assets/js/modernizr.js';
 // import './assets/js/waypoints';
 // import './assets/js/jquery.fittext';
 // import './assets/js/magnific-popotup';
@@ -16,7 +15,9 @@ import './assets/js/jquery-migrate-1.2.1.min';
 
 function App() {
   return (
+    
     <div className="App">
+      
       <header id="home">
 
         <nav id="nav-wrap">
