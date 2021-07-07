@@ -1,27 +1,19 @@
 import React from "react";
 import Contact from "./Contact";
 import DownloadResume from "./DownloadResume";
+import mohilkhare_cropped from "../assets/images/mohilkhare_cropped.jpg";
 
 function About() {
   return (
     <section id="about">
       <div class="row">
         <div class="three columns">
-          <img class="profile-pic" src="images/profilepic.jpg" alt="" />
+          <img class="profile-pic" src={mohilkhare_cropped} alt="" />
         </div>
         <div class="nine columns main-col">
           <h2>About Me</h2>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam.
+          Goal oriented, inquisitive computer science enthusiast. I keep keen interest in data science and plan to enter this field as I complete my formal education. I am also a 4 star coder on Codechef, which I mainly do to keep my DSA intact. I am currently trying to expand my knowledge base by doing online certifications from Coursera and Udemy to get ready for implementing the problem statements that can create a difference. Scroll ahead to know more abut me.
           </p>
           <div class="row">
             <Contact />

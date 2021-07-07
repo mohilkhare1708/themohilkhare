@@ -21,17 +21,12 @@ function Banner() {
         <ul class="social">
           <li>
             <a href="#">
-              <i class="fa fa-facebook"></i>
+              <i class="fa fa-github"></i>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-google-plus"></i>
             </a>
           </li>
           <li>
@@ -42,16 +37,6 @@ function Banner() {
           <li>
             <a href="#">
               <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-dribbble"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-skype"></i>
             </a>
           </li>
         </ul>
