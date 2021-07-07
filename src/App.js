@@ -4,45 +4,17 @@ import './assets/css/default.css';
 import './assets/css/layout.css';
 import './assets/css/magnific-popup.css';
 import './assets/css/media-queries.css';
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import Scrolldown from './components/Scrolldown';
 import Contact from './components/Contact';
 import DownloadResume from './components/DownloadResume';
 import ExperienceItem from './components/ExperienceItem';
+import About from './components/About';
+import Header from './components/Header';
 
 function App() {
   return (
-    
     <div className="App">
-      <header id="home">
-        <Navbar />
-        <Banner />
-        <Scrolldown />
-      </header> 
-      <section id="about">
-        <div class="row">
-          <div class="three columns">
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-          </div>
-          <div class="nine columns main-col">
-            <h2>About Me</h2>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-              voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-            </p>
-            <div class="row">
-              <Contact />
-              <DownloadResume />
-            </div>
-          </div>
-        </div>
-
-      </section>
+      <Header />
+      <About />
       <section id="resume">
         <div class="row education">
           <div class="three columns header-col">
