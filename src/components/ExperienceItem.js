@@ -3,7 +3,7 @@ import React from "react";
 function ExperienceItem(props) {
   return (
     <div class="row item">
-      <div class="twelve columns" style="text-align: left;">
+      <div class="twelve columns">
         <h3>{props.orguni}</h3>
         <p class="info">
           {props.courserole} <span>&bull;</span>{" "}
