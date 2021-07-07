@@ -1,4 +1,6 @@
 import React from 'react';
+import Contact from './Contact';
+import DownloadResume from './DownloadResume';
 
 function About() {
     return(

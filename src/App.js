@@ -1,11 +1,8 @@
-import logo from './static/logo.svg';
 import './assets/css/App.css';
 import './assets/css/default.css';
 import './assets/css/layout.css';
 import './assets/css/magnific-popup.css';
 import './assets/css/media-queries.css';
-import Contact from './components/Contact';
-import DownloadResume from './components/DownloadResume';
 import ExperienceItem from './components/ExperienceItem';
 import About from './components/About';
 import Header from './components/Header';

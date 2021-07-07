@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './assets/css/index.css';
 import App from './App';
 import reportWebVitals from './assets/js/reportWebVitals';
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyClbI1YEtz5zULMNbxogc76XEUqn6Ubloc",
   authDomain: "themohilkhare.firebaseapp.com",
   projectId: "themohilkhare",
