@@ -1,4 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import hero_pic from "./assets/images/hero_pic.jpg";
 import "./assets/css/App.css";
 import "./assets/css/default.css";
 import "./assets/css/layout.css";

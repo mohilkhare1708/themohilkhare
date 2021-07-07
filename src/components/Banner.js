@@ -4,14 +4,12 @@ function Banner() {
   return (
     <div class="row banner">
       <div class="banner-text">
-        <h1 class="responsive-headline">I'm Jonathan Doe.</h1>
+        <h1 class="responsive-headline">I'm Mohil Khare.</h1>
         <h3>
-          I'm a Manila based <span>graphic designer</span>,{" "}
-          <span>illustrator</span> and <span>webdesigner</span> creating awesome
-          and effective visual identities for companies of all sizes around the
-          globe. Let's{" "}
+          I'm a Mumbai based <span>software developer</span>,{" "}
+          <span>competitive programmer</span> and <span>tech writer</span>. My fascination about the power of computers is unending and I create things that reciprocate that. Let's{" "}
           <a class="smoothscroll" href="#about">
-            start scrolling
+            start scrolling{" "}
           </a>
           and learn more{" "}
           <a class="smoothscroll" href="#about">
