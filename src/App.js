@@ -23,10 +23,10 @@ function App() {
           </div>
           <div class="nine columns main-col">
             <ExperienceItem
-              orguni="Hey"
-              courserole="heyy"
-              date="yoo"
-              desc="yikes"
+              orguni="K. J. Somaiya Institute of Engineering and Information Technology, Sion"
+              courserole="B. Tech. in Computer Engineering"
+              date="2018-2022"
+              desc=""
             />
           </div>
         </div>
