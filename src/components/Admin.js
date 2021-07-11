@@ -4,7 +4,7 @@ import "../assets/css/admin.css";
 function Admin() {
   return (
     <div class="row banner">
-      <form>
+      <form class="adminForm">
         <h4>Add Education / Work Experience</h4>
         <label for="type">Choose type</label>
         <select name="type" id="type">

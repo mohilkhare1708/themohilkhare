@@ -1,4 +1,8 @@
 import React from "react";
+import "../assets/css/default.css";
+import "../assets/css/layout.css";
+import "../assets/css/magnific-popup.css";
+import "../assets/css/media-queries.css";
 import ExperienceItem from "./ExperienceItem";
 import Header from "./Header";
 import Footer from "./Footer";
