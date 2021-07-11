@@ -1,85 +1,18 @@
 import React from "react";
-import hero_pic from "../assets/images/hero_pic.jpg";
-
-const bannerStyle = {
-  background: "#161415 url(" + hero_pic + ")" + " no-repeat top center",
-};
+import "../assets/css/admin.css";
 
 function Admin() {
   return (
-    <header id="home" style={bannerStyle}>
-      <div class="row banner">
-        <div class="banner-text">
-          <div class="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm">
-              <fieldset>
-                <div>
-                  <label for="contactName">
-                    Name <span class="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    value=""
-                    size="35"
-                    id="contactName"
-                    name="contactName"
-                  />
-                </div>
-
-                <div>
-                  <label for="contactEmail">
-                    Email <span class="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    value=""
-                    size="35"
-                    id="contactEmail"
-                    name="contactEmail"
-                  />
-                </div>
-
-                <div>
-                  <label for="contactSubject">Subject</label>
-                  <input
-                    type="text"
-                    value=""
-                    size="35"
-                    id="contactSubject"
-                    name="contactSubject"
-                  />
-                </div>
-
-                <div>
-                  <label for="contactMessage">
-                    Message <span class="required">*</span>
-                  </label>
-                  <textarea
-                    cols="50"
-                    rows="15"
-                    id="contactMessage"
-                    name="contactMessage"
-                  ></textarea>
-                </div>
-
-                <div>
-                  <button class="submit">Submit</button>
-                  <span id="image-loader">
-                    <img alt="" src="images/loader.gif" />
-                  </span>
-                </div>
-              </fieldset>
-            </form>
-
-            <div id="message-warning"> Error boy</div>
-            <div id="message-success">
-              <i class="fa fa-check"></i>Your message was sent, thank you!
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div class="row banner">
+      <form>
+        <h4>Add Education / Work Experience</h4>
+        <input class="name" type="text" id="orguni" name="orguni" placeholder="Organization / University" />
+        <input class="name" type="text" id="title" name="title" placeholder="Course / Job Title" />
+        <input class="name" type="text" id="date" name="date" placeholder="Date" />
+        <input class="name" type="text" id="desc" name="desc" placeholder="Description" />
+        <input class="sub" type="submit" value="Add This!" />
+      </form>
+    </div>
   );
 }
 
