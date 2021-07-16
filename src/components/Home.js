@@ -36,6 +36,7 @@ function Home() {
             <h1>
               <span>Work</span>
             </h1>
+
           </div>
           <div class="nine columns main-col">
             <div class="row item">
