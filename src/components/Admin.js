@@ -4,9 +4,12 @@ import "../assets/css/admin.css";
 
 function Admin() {
   const [title, setTitle] = useState('');
-
+  const [type, setType] = useState('');
   const handleOcTitle = (e) => {
     setTitle(e.target.value);
+  }
+  const handleOcType = (e) => {
+    setType(e.target.value);
   }
 
   const createDB = () => {
@@ -21,21 +24,15 @@ function Admin() {
     <div class="row banner">
       <form class="adminForm">
         <h4>Add Education / Work Experience</h4>
-        {/* <label for="type">Choose type</label>
-        <select name="type" id="type" value={type} onChange={handleOcType}>
-          <option value="education">Education</option>
-          <option value="workex">Work Experience</option>
-        </select>
-        <br /><br />
         <input
           class="name"
           type="text"
-          id="orguni"
-          name="orguni"
-          placeholder="Organization / University"
-          value={orguni}
-          onChange={handleOcOrguni}
-        /> */}
+          id="type"
+          name="type"
+          placeholder="Education or Work?"
+          value={type}
+          onChange={handleOcType}
+        />
         <input
           class="name"
           type="text"

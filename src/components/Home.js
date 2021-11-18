@@ -6,8 +6,7 @@ import "../assets/css/media-queries.css";
 import ExperienceItem from "./ExperienceItem";
 import Header from "./Header";
 import Footer from "./Footer";
-import About from  "./About";
-
+import About from "./About";
 
 function Home() {
   return (
@@ -36,9 +35,14 @@ function Home() {
             <h1>
               <span>Work</span>
             </h1>
-
           </div>
           <div class="nine columns main-col">
+            <ExperienceItem
+              orguni="K. J. Somaiya Institute of Engineering and Information Technology, Sion"
+              courserole="B. Tech. in Computer Engineering"
+              date="2018-2022"
+              desc="blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
+            />
             <div class="row item">
               <div class="twelve columns">
                 <h3>Awesome Design Studio</h3>
@@ -60,32 +64,32 @@ function Home() {
           </div>
 
           <div class="nine columns main-col">
-            <p>Skill Info</p>
+            {/* <p>Skill Info</p> */}
 
             <div class="bars">
               <ul class="skills">
                 <li>
-                  <span class="bar-expand photoshop"></span>
+                  {/* <span class="bar-expand photoshop"></span> */}
                   <em>Photoshop</em>
                 </li>
                 <li>
-                  <span class="bar-expand illustrator"></span>
+                  {/* <span class="bar-expand illustrator"></span> */}
                   <em>Illustrator</em>
                 </li>
                 <li>
-                  <span class="bar-expand wordpress"></span>
+                  {/* <span class="bar-expand wordpress"></span> */}
                   <em>Wordpress</em>
                 </li>
                 <li>
-                  <span class="bar-expand css"></span>
+                  {/* <span class="bar-expand css"></span> */}
                   <em>CSS</em>
                 </li>
                 <li>
-                  <span class="bar-expand html5"></span>
+                  {/* <span class="bar-expand html5"></span> */}
                   <em>HTML5</em>
                 </li>
                 <li>
-                  <span class="bar-expand jquery"></span>
+                  {/* <span class="bar-expand jquery"></span> */}
                   <em>jQuery</em>
                 </li>
               </ul>

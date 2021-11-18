@@ -5,17 +5,17 @@ function Contact() {
     <div class="columns contact-details">
       <h2>Contact Details</h2>
       <p class="address">
-        <span>Jonathan Doe</span>
+        <span>Mohil Khare</span>
         <br />
         <span>
-          1600 Amphitheatre Parkway
+          3C-801, Indiabulls Greens,
           <br />
-          Mountain View, CA 94043 US
+          Panvel, MH 410206 IN
         </span>
         <br />
-        <span>(123)456-7890</span>
+        <span>+91 70204 03683</span>
         <br />
-        <span>anyone@website.com</span>
+        <span>mohilkhare17@gmail.com</span>
       </p>
     </div>
   );
