@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import firebase from "../util/Firebase";
 import "../assets/css/admin.css";
 
 function Admin() {
@@ -10,15 +9,6 @@ function Admin() {
   }
   const handleOcType = (e) => {
     setType(e.target.value);
-  }
-
-  const createDB = () => {
-    console.log("broooooooooooooooooo");
-    console.log(title);
-    const dbRef = firebase.ref("education");
-    console.log(title);
-    const item = {title};
-    dbRef.push(item);
   }
   return (
     <div class="row banner">
@@ -60,7 +50,7 @@ function Admin() {
           value={desc}
           onChange={handleOcDesc}
         /> */}
-        <input class="sub" type="submit" value="Add This!" onClick={createDB}/>
+        <input class="sub" type="submit" value="Add This!"/>
       </form>
     </div>
   );

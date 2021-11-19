@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/default.css";
 import "../assets/css/layout.css";
 import "../assets/css/magnific-popup.css";
@@ -7,8 +7,23 @@ import ExperienceItem from "./ExperienceItem";
 import Header from "./Header";
 import Footer from "./Footer";
 import About from "./About";
+import { db } from "../util/Firebase";
 
 function Home() {
+  const [education, setEducation] = useState([])
+  useEffect(async () => {
+    db.collection("education").onSnapshot((querySnapshot)=>{
+      let docs = []
+      querySnapshot.forEach((doc)=>{
+        docs.push({...doc.data(), id:doc.id})
+      })
+      setEducation(docs)
+      console.log(docs)
+    }, (err)=>{console.log(err)})
+    return () => {
+    }
+  }, [])
+
   return (
     <div>
       <Header />
@@ -21,12 +36,16 @@ function Home() {
             </h1>
           </div>
           <div class="nine columns main-col">
-            <ExperienceItem
-              orguni="K. J. Somaiya Institute of Engineering and Information Technology, Sion"
-              courserole="B. Tech. in Computer Engineering"
-              date="2018-2022"
-              desc=""
-            />
+            {education.map((educationItem)=>{
+              return (
+                <ExperienceItem
+                  orguni={educationItem.institute}
+                  courserole={educationItem.course}
+                  date={educationItem.date}
+                  desc={educationItem.description}
+                />
+              )
+            })}
           </div>
         </div>
 

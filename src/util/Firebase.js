@@ -1,16 +1,14 @@
 import firebase from "firebase";
-import "firebase/database";
 
-let firebaseConfig = {
-  apiKey: "AIzaSyClbI1YEtz5zULMNbxogc76XEUqn6Ubloc",
-  authDomain: "themohilkhare.firebaseapp.com",
-  projectId: "themohilkhare",
-  storageBucket: "themohilkhare.appspot.com",
-  messagingSenderId: "240110105782",
-  appId: "1:240110105782:web:1c688eddd1e44bcdf96217",
-  measurementId: "G-YX0YKX4Q48",
-};
+const firebaseApp = firebase.initializeApp({
+  apiKey: "AIzaSyCGsrnY-wx2VhbmDy44bxzvI-uqnt-cy0I",
+  authDomain: "themohilkhare-c041a.firebaseapp.com",
+  projectId: "themohilkhare-c041a",
+  storageBucket: "themohilkhare-c041a.appspot.com",
+  messagingSenderId: "125991953886",
+  appId: "1:125991953886:web:5d35091623a889252ca94f"
+})
 
-firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
 
-export default firebase.database();
+export { db };
