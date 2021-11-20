@@ -3,89 +3,17 @@ import "../assets/css/default.css";
 import "../assets/css/layout.css";
 import "../assets/css/magnific-popup.css";
 import "../assets/css/media-queries.css";
-import ExperienceItem from "./ExperienceItem";
 import Header from "./Header";
 import Footer from "./Footer";
 import About from "./About";
-import { db } from "../util/Firebase";
-import Education from "./Education";
-import Work from "./Work";
+import Resume from "./Resume";
 
 function Home() {
-  // const [education, setEducation] = useState([])
-  // const [work, setWork] = useState([])
-  // useEffect(async () => {
-  //   db.collection("education").onSnapshot((querySnapshot)=>{
-  //     let docs = []
-  //     querySnapshot.forEach((doc)=>{
-  //       docs.push({...doc.data(), id:doc.id})
-  //     })
-  //     setEducation(docs)
-  //   }, (err)=>{console.log(err)})
-  //   return () => {
-  //   }
-  // }, [])
-  // useEffect(() => {
-  //   db.collection&("work").onSnapshot((querySnapshot)=>{
-  //     let docs = []
-  //     querySnapshot.forEach((doc)=>{
-  //       docs.push({...doc.data(), id:doc.id})
-  //     })
-  //     setWork(docs)
-  //   }), (err)=>{console.log(err)}
-  //   return () => {
-  //   }
-  // }, [])
-
   return (
     <div>
       <Header />
       <About />
-      <section id="resume">
-        <Work />
-        <Education />
-
-        <div class="row skill">
-          <div class="three columns header-col">
-            <h1>
-              <span>Skills</span>
-            </h1>
-          </div>
-
-          <div class="nine columns main-col">
-            {/* <p>Skill Info</p> */}
-
-            <div class="bars">
-              <ul class="skills">
-                <li>
-                  {/* <span class="bar-expand photoshop"></span> */}
-                  <em>Photoshop</em>
-                </li>
-                <li>
-                  {/* <span class="bar-expand illustrator"></span> */}
-                  <em>Illustrator</em>
-                </li>
-                <li>
-                  {/* <span class="bar-expand wordpress"></span> */}
-                  <em>Wordpress</em>
-                </li>
-                <li>
-                  {/* <span class="bar-expand css"></span> */}
-                  <em>CSS</em>
-                </li>
-                <li>
-                  {/* <span class="bar-expand html5"></span> */}
-                  <em>HTML5</em>
-                </li>
-                <li>
-                  {/* <span class="bar-expand jquery"></span> */}
-                  <em>jQuery</em>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Resume />
 
       <section id="portfolio">
         <div class="row">
