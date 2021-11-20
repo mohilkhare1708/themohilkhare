@@ -8,72 +8,42 @@ import Header from "./Header";
 import Footer from "./Footer";
 import About from "./About";
 import { db } from "../util/Firebase";
+import Education from "./Education";
+import Work from "./Work";
 
 function Home() {
-  const [education, setEducation] = useState([])
-  useEffect(async () => {
-    db.collection("education").onSnapshot((querySnapshot)=>{
-      let docs = []
-      querySnapshot.forEach((doc)=>{
-        docs.push({...doc.data(), id:doc.id})
-      })
-      setEducation(docs)
-      console.log(docs)
-    }, (err)=>{console.log(err)})
-    return () => {
-    }
-  }, [])
+  // const [education, setEducation] = useState([])
+  // const [work, setWork] = useState([])
+  // useEffect(async () => {
+  //   db.collection("education").onSnapshot((querySnapshot)=>{
+  //     let docs = []
+  //     querySnapshot.forEach((doc)=>{
+  //       docs.push({...doc.data(), id:doc.id})
+  //     })
+  //     setEducation(docs)
+  //   }, (err)=>{console.log(err)})
+  //   return () => {
+  //   }
+  // }, [])
+  // useEffect(() => {
+  //   db.collection&("work").onSnapshot((querySnapshot)=>{
+  //     let docs = []
+  //     querySnapshot.forEach((doc)=>{
+  //       docs.push({...doc.data(), id:doc.id})
+  //     })
+  //     setWork(docs)
+  //   }), (err)=>{console.log(err)}
+  //   return () => {
+  //   }
+  // }, [])
 
   return (
     <div>
       <Header />
       <About />
       <section id="resume">
-        <div class="row education">
-          <div class="three columns header-col">
-            <h1>
-              <span>Education</span>
-            </h1>
-          </div>
-          <div class="nine columns main-col">
-            {education.map((educationItem)=>{
-              return (
-                <ExperienceItem
-                  orguni={educationItem.institute}
-                  courserole={educationItem.course}
-                  date={educationItem.date}
-                  desc={educationItem.description}
-                />
-              )
-            })}
-          </div>
-        </div>
-
-        <div class="row work">
-          <div class="three columns header-col">
-            <h1>
-              <span>Work</span>
-            </h1>
-          </div>
-          <div class="nine columns main-col">
-            <ExperienceItem
-              orguni="K. J. Somaiya Institute of Engineering and Information Technology, Sion"
-              courserole="B. Tech. in Computer Engineering"
-              date="2018-2022"
-              desc="blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
-            />
-            <div class="row item">
-              <div class="twelve columns">
-                <h3>Awesome Design Studio</h3>
-                <p class="info">
-                  Senior UX Designer <span>&bull;</span>{" "}
-                  <em class="date">March 2010 - Present</em>
-                </p>
-                <p>Demo Text</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Work />
+        <Education />
 
         <div class="row skill">
           <div class="three columns header-col">
