@@ -2,6 +2,8 @@ import React from "react";
 import Education from "./Education";
 import Work from "./Work";
 import Skills from "./Skills";
+import PostitionsOfResponsibilities from "./PostitionsOfResponsibilities";
+import Achievements from "./Achievements";
 
 const Resume = () => {
   return (
@@ -9,6 +11,8 @@ const Resume = () => {
       <section id="resume">
         <Work />
         <Education />
+        <PostitionsOfResponsibilities />
+        <Achievements />
         <Skills />
       </section>
     </div>
