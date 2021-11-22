@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { db } from "../util/Firebase";
 import PortfolioItem from "./PortfolioItem";
-import PortfolioModal from "./PortfolioModal";
 
 const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
@@ -39,23 +38,12 @@ const Portfolio = () => {
                     name={portfolioItem.name}
                     id={portfolioItem.id}
                     imgLink={portfolioItem.imgLink}
+                    repoLink={portfolioItem.repoLink}
                   />
                 );
               })}
             </div>
           </div>
-          {portfolio.map((portfolioItem) => {
-            return (
-              <PortfolioModal
-                name={portfolioItem.name}
-                id={portfolioItem.id}
-                imgLink={portfolioItem.imgLink}
-                repoLink={portfolioItem.repoLink}
-                description={portfolioItem.description}
-                technologies={portfolioItem.technologies}
-              />
-            );
-          })}
         </div>
       </section>
     </div>
