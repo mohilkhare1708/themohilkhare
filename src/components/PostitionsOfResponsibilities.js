@@ -10,6 +10,7 @@ const PostitionsOfResponsibilities = () => {
       querySnapshot.forEach((doc) => {
         docs.push({ ...doc.data(), id: doc.id });
       });
+      docs.reverse();
       setPor(docs);
     });
     return () => {};

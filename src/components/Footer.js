@@ -7,53 +7,37 @@ function Footer() {
         <div class="twelve columns">
           <ul class="social-links">
             <li>
-              <a href="#">
-                <i class="fa fa-facebook"></i>
+              <a href="https://github.com/mohilkhare1708" target="_blank">
+                <i class="fa fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-google-plus"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/mohil-khare/"
+                target="_blank"
+              >
                 <i class="fa fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/imohilkhare" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/mohil.khare/?hl=en"
+                target="_blank"
+              >
                 <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-dribbble"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-skype"></i>
               </a>
             </li>
           </ul>
 
           <ul class="copyright">
-            <li>&copy; Copyright 2014 CeeVee</li>
             <li>
-              Design by{" "}
-              <a
-                href="http://www.styleshout.com/"
-                title="Styleshout"
-                target="_blank"
-              >
-                Styleshout
-              </a>
+              Thanks for reaching this far, feel free to reach me out through
+              any of my social media handles!
             </li>
           </ul>
         </div>

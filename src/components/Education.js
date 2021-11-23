@@ -11,6 +11,7 @@ const Education = () => {
         querySnapshot.forEach((doc) => {
           docs.push({ ...doc.data(), id: doc.id });
         });
+        docs.reverse();
         setEducation(docs);
       },
       (err) => {

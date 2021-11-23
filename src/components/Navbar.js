@@ -36,11 +36,6 @@ function Navbar() {
             Testimonials
           </a>
         </li>
-        <li>
-          <a class="smoothscroll" href="#contact">
-            Contact
-          </a>
-        </li>
       </ul>
     </nav>
   );

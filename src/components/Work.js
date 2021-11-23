@@ -11,6 +11,7 @@ const Work = () => {
         querySnapshot.forEach((doc) => {
           docs.push({ ...doc.data(), id: doc.id });
         });
+        docs.reverse();
         setWork(docs);
       },
       (err) => {
