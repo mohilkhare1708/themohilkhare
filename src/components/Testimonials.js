@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { db } from "../util/Firebase";
-import TestimonialItem from "./TestimonialItem";
+import React from "react";
+// import { useEffect, useState } from "react";
+// import { db } from "../util/Firebase";
+// import TestimonialItem from "./TestimonialItem";
 
 const Testimonials = () => {
-  const [testimonial, setTestimonial] = useState([]);
-  useEffect(() => {
-    db.collection("testimonials").onSnapshot((querySnapshots) => {
-      let docs = [];
-      querySnapshots.forEach((doc) => {
-        docs.push({ ...doc.data(), id: doc.id });
-      });
-      console.log(docs);
-      setTestimonial(docs);
-    });
-    return () => {};
-  }, []);
+  // const [testimonial, setTestimonial] = useState([]);
+  // useEffect(() => {
+  //   db.collection("testimonials").onSnapshot((querySnapshots) => {
+  //     let docs = [];
+  //     querySnapshots.forEach((doc) => {
+  //       docs.push({ ...doc.data(), id: doc.id });
+  //     });
+  //     console.log(docs);
+  //     setTestimonial(docs);
+  //   });
+  //   return () => {};
+  // }, []);
   return (
     <div>
       <section id="testimonials">

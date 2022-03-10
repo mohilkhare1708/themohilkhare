@@ -4,20 +4,23 @@ import ExperienceItem from "./ExperienceItem";
 
 const Work = () => {
   const [work, setWork] = useState([]);
-  useEffect(async () => {
-    db.collection("work").onSnapshot(
-      (querySnapshot) => {
-        let docs = [];
-        querySnapshot.forEach((doc) => {
-          docs.push({ ...doc.data(), id: doc.id });
-        });
-        docs.reverse();
-        setWork(docs);
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
+  useEffect(() => {
+    async function getWork() {
+      db.collection("work").onSnapshot(
+        (querySnapshot) => {
+          let docs = [];
+          querySnapshot.forEach((doc) => {
+            docs.push({ ...doc.data(), id: doc.id });
+          });
+          docs.reverse();
+          setWork(docs);
+        },
+        (err) => {
+          console.log(err);
+        }
+      )
+    };
+    getWork();
     return () => {};
   }, []);
   return (

@@ -4,20 +4,23 @@ import ExperienceItem from "./ExperienceItem";
 
 const Education = () => {
   const [education, setEducation] = useState([]);
-  useEffect(async () => {
-    db.collection("education").onSnapshot(
-      (querySnapshot) => {
-        let docs = [];
-        querySnapshot.forEach((doc) => {
-          docs.push({ ...doc.data(), id: doc.id });
-        });
-        docs.reverse();
-        setEducation(docs);
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
+  useEffect(() => {
+    async function getEducation() {
+      db.collection("education").onSnapshot(
+        (querySnapshot) => {
+          let docs = [];
+          querySnapshot.forEach((doc) => {
+            docs.push({ ...doc.data(), id: doc.id });
+          });
+          docs.reverse();
+          setEducation(docs);
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
+    };
+    getEducation();
     return () => {};
   }, []);
   return (

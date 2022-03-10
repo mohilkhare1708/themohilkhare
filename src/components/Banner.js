@@ -22,24 +22,24 @@ function Banner() {
         <hr />
         <ul class="social">
           <li>
-            <a href="https://github.com/mohilkhare1708" target="_blank">
+            <a href="https://github.com/mohilkhare1708" target="_blank" rel="noreferrer">
               <i class="fa fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/mohil-khare/" target="_blank">
+            <a href="https://www.linkedin.com/in/mohil-khare/" target="_blank" rel="noreferrer">
               <i class="fa fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/imohilkhare" target="_blank">
+            <a href="https://twitter.com/imohilkhare" target="_blank" rel="noreferrer">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
             <a
               href="https://www.instagram.com/mohil.khare/?hl=en"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <i class="fa fa-instagram"></i>
             </a>

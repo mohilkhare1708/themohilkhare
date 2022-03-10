@@ -4,22 +4,25 @@ import PortfolioItem from "./PortfolioItem";
 
 const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
-  useEffect(async () => {
-    db.collection("projects").onSnapshot(
-      (querySnapshot) => {
-        let docs = [];
-        querySnapshot.forEach((doc) => {
-          let idx = "" + (parseInt(doc.id) + 1);
-          console.log(idx);
-          docs.push({ ...doc.data(), id: idx });
-        });
-        docs.reverse();
-        setPortfolio(docs);
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
+  useEffect(() => {
+    async function getPortfolio() {
+      db.collection("projects").onSnapshot(
+        (querySnapshot) => {
+          let docs = [];
+          querySnapshot.forEach((doc) => {
+            let idx = "" + (parseInt(doc.id) + 1);
+            console.log(idx);
+            docs.push({ ...doc.data(), id: idx });
+          });
+          docs.reverse();
+          setPortfolio(docs);
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
+    };
+    getPortfolio();
     return () => {};
   }, []);
   return (
