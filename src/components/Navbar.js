@@ -6,7 +6,7 @@ function Navbar() {
       <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
         Show navigation
       </a>
-      <a class="mobile-btn" href="#" title="Hide navigation">
+      <a class="mobile-btn" href="#/" title="Hide navigation">
         Hide navigation
       </a>
 
